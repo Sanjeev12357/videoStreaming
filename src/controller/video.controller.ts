@@ -8,5 +8,5 @@ export const uploadVideoController = async (req: Request, res: Response) => {
     }
 
     const videoPath=req.file?.path;
-    res.status(200).json({ message: "Video uploaded successfully", videoPath });
+    res.status(200).json({ message: "Video uploaded ", videoPath });
 }
